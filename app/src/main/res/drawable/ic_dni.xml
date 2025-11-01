@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Fondo de la tarjeta (negro) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M3,4h18a2,2 0 0 1 2,2v12a2,2 0 0 1 -2,2H3a2,2 0 0 1 -2,-2V6a2,2 0 0 1 2,-2z" />
+
+    <!-- Silueta de cabeza (blanca) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7.5,8.5a2,2 0 1,1 0,4a2,2 0 0,1 0,-4z" />
+
+    <!-- Silueta del cuerpo (blanca) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M4.5,15c0,-1.66 1.34,-3 3,-3s3,1.34 3,3H4.5z" />
+
+    <!-- Líneas de información (blancas) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M13,9h6v1.3h-6zM13,12h6v1.3h-6zM13,15h4v1.3h-4z" />
+</vector>

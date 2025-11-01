@@ -4,18 +4,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.cibertec.ciberbet.R
-import com.cibertec.ciberbet.databinding.ActivityAdminBinding
+import com.cibertec.ciberbet.databinding.AdminActivityAdminBinding
 import com.cibertec.ciberbet.fragments.DeportesFragment
 import com.cibertec.ciberbet.fragments.EquiposFragment
 import com.cibertec.ciberbet.fragments.EventosFragment
 
 class AdminActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityAdminBinding
+    private lateinit var binding: AdminActivityAdminBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAdminBinding.inflate(layoutInflater)
+        binding = AdminActivityAdminBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Configurar la toolbar

@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cibertec.ciberbet.R
 import com.cibertec.ciberbet.adapters.DeporteAdapter
-import com.cibertec.ciberbet.databinding.FragmentDeportesBinding
+import com.cibertec.ciberbet.databinding.AdminFragmentDeportesBinding
 import com.cibertec.ciberbet.models.Deporte
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -19,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 class DeportesFragment : Fragment() {
-    private var _binding: FragmentDeportesBinding? = null
+    private var _binding: AdminFragmentDeportesBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var database: DatabaseReference
@@ -34,7 +34,7 @@ class DeportesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentDeportesBinding.inflate(inflater, container, false)
+        _binding = AdminFragmentDeportesBinding.inflate(inflater, container, false)
         return binding.root
     }
 

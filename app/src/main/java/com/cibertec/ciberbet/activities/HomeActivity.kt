@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.cibertec.ciberbet.R
-import com.cibertec.ciberbet.databinding.InicioBinding
+import com.cibertec.ciberbet.databinding.UserInicioBinding
 import com.cibertec.ciberbet.fragments.DeportesFragment
 import com.cibertec.ciberbet.fragments.EquiposFragment
 import com.cibertec.ciberbet.fragments.EventosFragment
@@ -15,11 +15,11 @@ import com.cibertec.ciberbet.fragments.PerfilFragment
 
 class HomeActivity : AppCompatActivity() {
 
-    private lateinit var binding: InicioBinding
+    private lateinit var binding: UserInicioBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = InicioBinding.inflate(layoutInflater)
+        binding = UserInicioBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Cargar fragment inicial (Home)

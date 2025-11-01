@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cibertec.ciberbet.R
 import com.cibertec.ciberbet.adapters.EquipoAdapter
-import com.cibertec.ciberbet.databinding.FragmentEquiposBinding
+import com.cibertec.ciberbet.databinding.AdminFragmentEquiposBinding
 import com.cibertec.ciberbet.models.Deporte
 import com.cibertec.ciberbet.models.Equipo
 import com.google.firebase.database.DataSnapshot
@@ -22,7 +22,7 @@ import com.google.firebase.database.ValueEventListener
 
 class EquiposFragment : Fragment() {
 
-    private var _binding: FragmentEquiposBinding? = null
+    private var _binding: AdminFragmentEquiposBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var database: DatabaseReference
@@ -40,7 +40,7 @@ class EquiposFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentEquiposBinding.inflate(inflater, container, false)
+        _binding = AdminFragmentEquiposBinding.inflate(inflater, container, false)
         return binding.root
     }
 

@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cibertec.ciberbet.R
 import com.cibertec.ciberbet.adapters.EventoAdapter
-import com.cibertec.ciberbet.databinding.FragmentEventosBinding
+import com.cibertec.ciberbet.databinding.AdminFragmentEventosBinding
 import com.cibertec.ciberbet.models.Deporte
 import com.cibertec.ciberbet.models.Equipo
 import com.cibertec.ciberbet.models.Evento
@@ -23,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 class EventosFragment : Fragment() {
-    private var _binding: FragmentEventosBinding? = null
+    private var _binding: AdminFragmentEventosBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var database: DatabaseReference
@@ -47,7 +47,7 @@ class EventosFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentEventosBinding.inflate(inflater, container, false)
+        _binding = AdminFragmentEventosBinding.inflate(inflater, container, false)
         return binding.root
     }
 
